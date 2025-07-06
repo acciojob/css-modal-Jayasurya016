@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>CSS Modal</title>
   <style>
-    /* Hide modal by default */
+
     .modal {
       display: none;
       position: fixed;
@@ -16,12 +16,12 @@
       background-color: rgba(0, 0, 0, 0.7);
     }
 
-    /* Show modal when targeted via hash */
+
     #modalBox:target {
       display: block;
     }
 
-    /* Modal content */
+
     .modal-content {
       background-color: #fff;
       width: 40%;
@@ -30,7 +30,7 @@
       animation: fadeIn 0.3s ease;
     }
 
-    /* Modal header */
+    
     .modal-header {
       background-color: #4CAF50;
       color: white;
@@ -40,12 +40,12 @@
       align-items: center;
     }
 
-    /* Modal body */
+
     .modal-body {
       padding: 15px;
     }
 
-    /* Close button */
+
     .close-modal {
       color: white;
       text-decoration: none;
@@ -62,15 +62,15 @@
 </head>
 <body>
 
-<!-- Button to open modal -->
+
 <a href="#modalBox"><button id="openModal">Open Modal</button></a>
 
-<!-- Modal structure -->
+
 <div class="modal" id="modalBox">
   <div class="modal-content">
     <div class="modal-header">
       <h2>Modal Header</h2>
-      <a href="#" class="close-modal">x</a>
+      <a class="close-modal">x</a>
     </div>
     <div class="modal-body">
       <p>Modal Body Content</p>
